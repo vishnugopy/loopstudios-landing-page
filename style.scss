@@ -17,6 +17,9 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     nav {
         width: 30%;
@@ -49,8 +52,8 @@ header {
 
     h1 {
         @include fontjosefin;
-        width: 90%;
-        font-size: 45px;
+        width: 95%;
+        font-size: 40px;
         color: white;
         text-transform: uppercase;
         border: 2px solid $white;
@@ -111,21 +114,91 @@ header {
 
     .allfigures{
         figure{
-            width: 80%;
-            margin: 0 auto;
+            width: 90%;
+            margin: 4% auto;
+            position: relative;
     
-            img{
+    
+            .figureimage{
                 width: 100%;
+            }
+
+            figcaption{
+                    position: absolute;
+                    color: $white;
+                    left: 0;
+                    bottom: 0;
+                    font-size: 20px;
+                    margin: 5%;
+                    @include fontjosefin;
+                    text-transform: uppercase;
+                    width:35%;
             }
         }
     }
+
+    .secondbutton{
+        display: block;
+        margin:5% auto 30% auto;
+        @include fontjosefin;
+        font-weight: 800;
+        text-transform: uppercase;
+        padding: 4% 14%;
+        border: 1px solid $black;
+        background: $white;
     
 }
 
+}
+
+footer{
+    background: $black;
+    padding: 20% 1%;
+    color: $white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        order: 1;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .socials{
+        order: 3;
+        margin:8% 0%;
+        img{
+            width: auto;
+            margin: 0% 3%;
+        }
+    }
+
+    nav{
+        order: 2;
+        margin: 10% auto;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            @include fontalata;
+            text-decoration: none;
+            color: $white;
+            margin:10% auto;
+        }
+    }
+
+    p{
+        order: 4;
+        @include fontalata;
+        color: $darkgray;
+    }
+
+   
+}
 
 
-
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 500px) {
     body {
         background-color: $white;
     }
