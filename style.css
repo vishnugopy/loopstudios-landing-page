@@ -43,7 +43,7 @@ header nav a {
   background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   width: auto;
-  height: 90vh;
+  height: 80vh;
   background-size: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,6 +67,67 @@ header nav a {
   text-transform: uppercase;
   border: 2px solid #ffffff;
   padding: 4% 2%;
+}
+
+.secondesection {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 30% 0% 30% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondesection .imagecontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.secondesection h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10% 0% 6% 0%;
+}
+
+.secondesection p {
+  color: #8c8c8c;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.thirdsection div h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0% 0% 6% 0%;
+}
+
+.thirdsection div button {
+  display: none;
+}
+
+.thirdsection .allfigures figure {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.thirdsection .allfigures figure img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 376px) {
