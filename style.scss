@@ -1,0 +1,123 @@
+@import "./css/base/index.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $white;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding:10% 1% ;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    nav {
+    width: 30%;
+    display: none;
+    justify-content: space-between;
+    align-items:center;
+
+    a{
+        @include fontalata;
+        text-decoration: none;
+        color: $white;
+    }
+    }
+}
+
+.firstsection{
+    position: relative;
+    background-image:linear-gradient(rgba(0, 0, 15, 0.465),rgba(0, 0, 15, 0.465)), url(./images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 90vh;
+    background-size: 100%;
+    display: flex;
+    align-items:center;
+
+    div{
+        width:90%;
+        margin: 0 auto;
+    }
+
+    h1{
+        @include fontjosefin;
+        width: 90%;
+        font-size:45px;
+        color: white;
+        text-transform: uppercase;
+        border:2px solid $white;
+        padding:4% 2%;
+    }
+}
+
+
+
+@media only screen and (min-width: 376px) {
+    body {
+        background-color: $white;
+    }
+
+    header {
+        width: 80%;
+        margin: 0 auto;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        padding: 4% 1% ;
+        z-index: 5;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+        a{
+            @include fontalata;
+            text-decoration: none;
+            color: $white;
+        }
+        }
+    }
+
+
+    .firstsection{
+        position: relative;
+        background-image:linear-gradient(rgba(0, 0, 15, 0.465),rgba(0, 0, 15, 0.465)), url(./images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        height: 90vh;
+        background-size: 100%;
+        display: flex;
+        align-items:center;
+
+        div{
+            width:80%;
+            margin: 0 auto
+        }
+
+        h1{
+            @include fontjosefin;
+            width: 50%;
+            font-size: 100px;
+            color: white;
+            text-transform: uppercase;
+            border:2px solid $white;
+            padding:4% 2%;
+        }
+    }
+
+
+
+
+
+}

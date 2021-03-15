@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10% 1%;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+header nav {
+  width: 30%;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav a {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.firstsection {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.465)), to(rgba(0, 0, 15, 0.465))), url(./images/mobile/image-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 90vh;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstsection div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.firstsection h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  width: 90%;
+  font-size: 45px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 4% 2%;
+}
+
+@media only screen and (min-width: 376px) {
+  body {
+    background-color: #ffffff;
+  }
+  header {
+    width: 80%;
+    margin: 0 auto;
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4% 1%;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  header nav {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .firstsection {
+    position: relative;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.465)), to(rgba(0, 0, 15, 0.465))), url(./images/desktop/image-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .firstsection div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .firstsection h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    width: 50%;
+    font-size: 100px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;
+    padding: 4% 2%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
