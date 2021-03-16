@@ -170,7 +170,11 @@ header {
                 img {
                     width: 100%;
                 }
+
+
             }
+
+           
 
             figcaption {
                 position: absolute;
@@ -183,6 +187,16 @@ header {
                 text-transform: uppercase;
                 width: 35%;
             }
+        }
+
+        figure:hover  figcaption{
+            color: $black;
+
+        }
+
+        figure:hover  img{
+            opacity: 0.4;
+
         }
     }
 

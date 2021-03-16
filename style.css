@@ -204,6 +204,14 @@ header .normal a:hover {
   width: 35%;
 }
 
+.thirdsection .allfigures figure:hover figcaption {
+  color: #000000;
+}
+
+.thirdsection .allfigures figure:hover img {
+  opacity: 0.4;
+}
+
 .thirdsection .secondbutton {
   display: block;
   margin: 5% auto 30% auto;
