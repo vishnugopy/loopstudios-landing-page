@@ -58,6 +58,7 @@ header {
         text-transform: uppercase;
         border: 2px solid $white;
         padding: 4% 2%;
+        word-spacing: 9999px;
     }
 }
 
@@ -73,6 +74,10 @@ header {
     .imagecontainer {
         width: 90%;
         margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
     }
 
     h2 {
@@ -105,53 +110,57 @@ header {
             padding: 0% 0% 6% 0%;
         }
 
-        button{
+        button {
             display: none;
         }
     }
 
 
 
-    .allfigures{
-        figure{
+    .allfigures {
+        figure {
             width: 90%;
             margin: 4% auto;
             position: relative;
-    
-    
-            .figureimage{
-                width: 100%;
+
+
+            .figureimage {
+                width: 90%;
+
+                img {
+                    width: 100%;
+                }
             }
 
-            figcaption{
-                    position: absolute;
-                    color: $white;
-                    left: 0;
-                    bottom: 0;
-                    font-size: 20px;
-                    margin: 5%;
-                    @include fontjosefin;
-                    text-transform: uppercase;
-                    width:35%;
+            figcaption {
+                position: absolute;
+                color: $white;
+                left: 0;
+                bottom: 0;
+                font-size: 20px;
+                margin: 5%;
+                @include fontjosefin;
+                text-transform: uppercase;
+                width: 35%;
             }
         }
     }
 
-    .secondbutton{
+    .secondbutton {
         display: block;
-        margin:5% auto 30% auto;
+        margin: 5% auto 30% auto;
         @include fontjosefin;
         font-weight: 800;
         text-transform: uppercase;
         padding: 4% 14%;
         border: 1px solid $black;
         background: $white;
-    
-}
+
+    }
 
 }
 
-footer{
+footer {
     background: $black;
     padding: 20% 1%;
     color: $white;
@@ -159,24 +168,26 @@ footer{
     display: flex;
     flex-direction: column;
 
-    img{
+    img {
         order: 1;
         width: 50%;
         margin: 0 auto;
     }
-    .socials{
+
+    .socials {
         order: 3;
-        margin:8% 0%;
-        img{
+        margin: 8% 0%;
+
+        img {
             width: auto;
             margin: 0% 3%;
         }
     }
 
-    nav{
+    nav {
         order: 2;
         margin: 10% auto;
-        align-items:center;
+        align-items: center;
         display: flex;
         flex-direction: column;
 
@@ -184,17 +195,17 @@ footer{
             @include fontalata;
             text-decoration: none;
             color: $white;
-            margin:10% auto;
+            margin: 10% auto;
         }
     }
 
-    p{
+    p {
         order: 4;
         @include fontalata;
         color: $darkgray;
     }
 
-   
+
 }
 
 
@@ -215,6 +226,10 @@ footer{
         left: 0;
         right: 0;
 
+        .humbergermenu {
+            display: none;
+        }
+
         nav {
             width: 30%;
             display: flex;
@@ -234,10 +249,11 @@ footer{
         position: relative;
         background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/desktop/image-hero.jpg);
         background-repeat: no-repeat;
-        height: 90vh;
-        background-size: 100%;
+        height: auto;
+        background-size: cover;
         display: flex;
         align-items: center;
+        padding: 15% 0%;
 
         div {
             width: 80%;
@@ -246,14 +262,163 @@ footer{
 
         h1 {
             @include fontjosefin;
-            width: 50%;
-            font-size: 100px;
+            width: 60%;
+            font-size: 5rem;
             color: white;
             text-transform: uppercase;
             border: 2px solid $white;
             padding: 4% 2%;
+            word-spacing: 9px;
         }
     }
+
+    .secondesection {
+        width: 80%;
+        margin:10% auto;
+        height: auto;
+        padding: 0% 0% 5% 0%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        .imagecontainer {
+            width: 50%;
+            margin: 1%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .whitetext {
+            position: absolute;
+            background: $white;
+            width: 50%;
+            padding: 5%;
+            margin: 0% auto 0% 40%;
+            top: 30%;
+        }
+
+    }
+
+    .thirdsection {
+        width: 80%;
+        margin:10% auto;
+        border: 1px solid blue;
+        .nameandbutton {
+            display: flex;
+            align-items: flex-start;
+            justify-content:space-between ;
+            h2 {
+                @include fontjosefin;
+            }
+
+            button {
+                display: block;
+                @include fontjosefin;
+                font-weight: 800;
+                text-transform: uppercase;
+                padding: 1% 4%;
+                border: 1px solid $black;
+                background: $white;
+            }
+        }
+
+
+
+        .allfigures {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            figure {
+                width: 20%;
+                border: 1px solid black;
+                margin: 10% 2%;
+                position: relative;
+                transform: rotate(90deg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .figureimage {
+                    width: auto;
+                    height:200px;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                figcaption {
+                    position: absolute;
+                    color: $white;
+                    left: 0;
+                    bottom: 0;
+                    font-size: 20px;
+                    margin: 5%;
+                    @include fontjosefin;
+                    text-transform: uppercase;
+                    width: 35%;
+                }
+            }
+        }
+
+        .secondbutton {
+            display: none;
+
+
+        }
+
+    }
+
+    footer {
+        background: $black;
+        padding: 20% 1%;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            order: 1;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .socials {
+            order: 3;
+            margin: 8% 0%;
+
+            img {
+                width: auto;
+                margin: 0% 3%;
+            }
+        }
+
+        nav {
+            order: 2;
+            margin: 10% auto;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                @include fontalata;
+                text-decoration: none;
+                color: $white;
+                margin: 10% auto;
+            }
+        }
+
+        p {
+            order: 4;
+            @include fontalata;
+            color: $darkgray;
+        }
+
+
+    }
+
+
 
 
 }
