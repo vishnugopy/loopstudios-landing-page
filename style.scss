@@ -162,7 +162,7 @@ header {
 
 footer {
 
-    .footercontainer{
+    .footercontainer {
         background: $black;
         padding: 20% 1%;
         color: $white;
@@ -170,7 +170,7 @@ footer {
         display: flex;
         flex-direction: column;
     }
-    
+
 
     img {
         order: 1;
@@ -278,12 +278,13 @@ footer {
 
     .secondesection {
         width: 80%;
-        margin:10% auto;
+        margin: 10% auto;
         height: auto;
         padding: 0% 0% 5% 0%;
         display: flex;
         flex-direction: column;
         position: relative;
+
         .imagecontainer {
             width: 50%;
             margin: 1%;
@@ -306,11 +307,13 @@ footer {
 
     .thirdsection {
         width: 80%;
-        margin:10% auto;
+        margin: 10% auto;
+
         .nameandbutton {
             display: flex;
             align-items: flex-start;
-            justify-content:space-between ;
+            justify-content: space-between;
+
             h2 {
                 @include fontjosefin;
             }
@@ -331,6 +334,7 @@ footer {
             flex-wrap: wrap;
             width: 100%;
             justify-content: space-between;
+
             figure {
                 width: 22%;
                 margin: 2% 0%;
@@ -341,7 +345,7 @@ footer {
 
                 .figureimage {
                     width: 100%;
-                    height:auto;
+                    height: auto;
 
                     img {
                         width: 100%;
@@ -372,8 +376,8 @@ footer {
         background: $black;
         padding: 3% 1%;
         color: $white;
-       
-        .footercontainer{
+
+        .footercontainer {
             width: 80%;
             padding: 2% 1%;
             margin: 0 auto;
@@ -382,15 +386,15 @@ footer {
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-           
+
         }
-        
+
 
         img {
             order: 1;
             width: 20%;
             margin: 0%;
-            
+
         }
 
         .socials {
@@ -403,7 +407,7 @@ footer {
 
             img {
                 width: auto;
-                margin:0px 10px;
+                margin: 0px 10px;
             }
         }
 
