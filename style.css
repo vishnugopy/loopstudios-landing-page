@@ -28,7 +28,7 @@ header {
           align-items: center;
 }
 
-header nav {
+header .normal {
   width: 30%;
   display: none;
   -webkit-box-pack: justify;
@@ -39,11 +39,48 @@ header nav {
           align-items: center;
 }
 
-header nav a {
+header .normal a {
   font-family: 'Alata', sans-serif;
   font-weight: 400;
   text-decoration: none;
   color: #ffffff;
+}
+
+.special {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  display: none;
+  z-index: 2;
+  background: black;
+  width: 100%;
+  padding: 50% 0%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.special a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 3%;
+  font-size: 2rem;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .firstsection {
@@ -265,7 +302,8 @@ footer p {
   header .humbergermenu {
     display: none;
   }
-  header nav {
+  header .normal {
+    display: block;
     width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -277,11 +315,14 @@ footer p {
         -ms-flex-align: center;
             align-items: center;
   }
-  header nav a {
+  header .normal a {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     text-decoration: none;
     color: #ffffff;
+  }
+  .special {
+    display: none;
   }
   .firstsection {
     position: relative;

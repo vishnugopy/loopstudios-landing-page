@@ -21,7 +21,9 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    nav {
+
+
+    .normal {
         width: 30%;
         display: none;
         justify-content: space-between;
@@ -34,6 +36,37 @@ header {
         }
     }
 }
+
+.special {
+
+    @include fontjosefin;
+    display: none;
+    z-index: 2;
+    background: black;
+    width: 100%;
+    padding: 50% 0%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    a {
+        text-decoration: none;
+        color: $white;
+        margin: 3%;
+        font-size: 2rem;
+    }
+
+
+}
+
+.show {
+    display: flex;
+}
+
 
 .firstsection {
     position: relative;
@@ -234,7 +267,8 @@ footer {
             display: none;
         }
 
-        nav {
+        .normal {
+            display: block;
             width: 30%;
             display: flex;
             justify-content: space-between;
@@ -246,6 +280,10 @@ footer {
                 color: $white;
             }
         }
+    }
+
+    .special {
+        display: none;
     }
 
 
@@ -434,11 +472,5 @@ footer {
             color: $darkgray;
             text-align: right;
         }
-
-
     }
-
-
-
-
 }
