@@ -174,7 +174,7 @@ header nav a {
   background: #ffffff;
 }
 
-footer {
+footer .footercontainer {
   background: #000000;
   padding: 20% 1%;
   color: #ffffff;
@@ -345,7 +345,6 @@ footer p {
   .thirdsection {
     width: 80%;
     margin: 10% auto;
-    border: 1px solid blue;
   }
   .thirdsection .nameandbutton {
     display: -webkit-box;
@@ -379,14 +378,14 @@ footer p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .thirdsection .allfigures figure {
-    width: 20%;
-    border: 1px solid black;
-    margin: 10% 2%;
+    width: 22%;
+    margin: 2% 0%;
     position: relative;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -398,8 +397,8 @@ footer p {
             justify-content: center;
   }
   .thirdsection .allfigures figure .figureimage {
-    width: auto;
-    height: 200px;
+    width: 100%;
+    height: auto;
   }
   .thirdsection .allfigures figure .figureimage img {
     width: 100%;
@@ -409,76 +408,99 @@ footer p {
     color: #ffffff;
     left: 0;
     bottom: 0;
-    font-size: 20px;
-    margin: 5%;
+    font-size: 2rem;
+    margin: 10%;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    width: 35%;
+    width: 80%;
   }
   .thirdsection .secondbutton {
     display: none;
   }
   footer {
     background: #000000;
-    padding: 20% 1%;
+    padding: 3% 1%;
     color: #ffffff;
-    text-align: center;
+  }
+  footer .footercontainer {
+    width: 80%;
+    padding: 2% 1%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 50%;
-    margin: 0 auto;
+    width: 20%;
+    margin: 0%;
   }
   footer .socials {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
-    margin: 8% 0%;
-  }
-  footer .socials img {
-    width: auto;
-    margin: 0% 3%;
-  }
-  footer nav {
+    width: 60%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin: 10% auto;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: 1% 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 0%;
+  }
+  footer .socials img {
+    width: auto;
+    margin: 0px 10px;
+  }
+  footer nav {
+    width: 40%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin: 2% 0%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   footer nav a {
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     text-decoration: none;
     color: #ffffff;
-    margin: 10% auto;
+    margin: 0% 5% 0% 0%;
   }
   footer p {
+    width: 40%;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
     font-family: 'Alata', sans-serif;
     font-weight: 400;
     color: #8c8c8c;
+    text-align: right;
   }
 }
 /*# sourceMappingURL=style.css.map */
