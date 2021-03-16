@@ -33,6 +33,13 @@ header {
             @include fontalata;
             text-decoration: none;
             color: $white;
+
+            &:hover {
+                border-bottom: 2px solid $white;
+                padding-bottom: 1%;
+
+
+            }
         }
     }
 }
@@ -188,6 +195,12 @@ header {
         padding: 4% 14%;
         border: 1px solid $black;
         background: $white;
+
+        &:hover {
+            background: $black;
+            color: $white;
+            cursor: pointer;
+        }
 
     }
 
@@ -364,6 +377,12 @@ footer {
                 padding: 1% 4%;
                 border: 1px solid $black;
                 background: $white;
+
+                &:hover {
+                    background: $black;
+                    color: $white;
+                    cursor: pointer;
+                }
             }
         }
 

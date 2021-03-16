@@ -46,6 +46,11 @@ header .normal a {
   color: #ffffff;
 }
 
+header .normal a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 1%;
+}
+
 .special {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
@@ -209,6 +214,12 @@ header .normal a {
   padding: 4% 14%;
   border: 1px solid #000000;
   background: #ffffff;
+}
+
+.thirdsection .secondbutton:hover {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 footer .footercontainer {
@@ -411,6 +422,11 @@ footer p {
     padding: 1% 4%;
     border: 1px solid #000000;
     background: #ffffff;
+  }
+  .thirdsection .nameandbutton button:hover {
+    background: #000000;
+    color: #ffffff;
+    cursor: pointer;
   }
   .thirdsection .allfigures {
     display: -webkit-box;
