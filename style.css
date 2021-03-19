@@ -380,9 +380,9 @@ footer p {
   }
   .secondesection {
     width: 80%;
-    margin: 10% auto;
+    margin: 2% auto;
     height: auto;
-    padding: 10% 0%;
+    padding: 5% 0%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -405,7 +405,7 @@ footer p {
     width: 50%;
     padding: 5%;
     margin: 0% auto 0% 40%;
-    top: 30%;
+    top: 40%;
   }
   .thirdsection {
     width: 80%;
