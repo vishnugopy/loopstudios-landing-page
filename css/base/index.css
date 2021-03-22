@@ -1,3 +1,296 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+nav a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 1%;
+}
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10% 1%;
+  z-index: 5;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .normal {
+  width: 30%;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .normal a {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .normal a:hover {
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 1%;
+}
+
+.special {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  display: none;
+  z-index: 2;
+  background: black;
+  width: 100%;
+  padding: 50% 0%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.special a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 3%;
+  font-size: 2rem;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footercontainer {
+  background: #000000;
+  padding: 20% 1%;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer img {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer .socials {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  margin: 8% 0%;
+}
+
+footer .socials img {
+  width: auto;
+  margin: 0% 3%;
+}
+
+footer nav {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin: 10% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer nav a {
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 10% auto;
+}
+
+footer p {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  color: #8c8c8c;
+}
+
+.firstsection {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 15, 0.465)), to(rgba(0, 0, 15, 0.465))), url(./images/mobile/image-hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  width: auto;
+  height: 80vh;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.firstsection div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.firstsection h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  width: 95%;
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  padding: 4% 2%;
+  word-spacing: 9999px;
+}
+
+.secondesection {
+  background: #ffffff;
+  width: 100%;
+  height: auto;
+  padding: 30% 0% 30% 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.secondesection .imagecontainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.secondesection .imagecontainer img {
+  width: 100%;
+}
+
+.secondesection h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10% 0% 6% 0%;
+}
+
+.secondesection p {
+  color: #8c8c8c;
+  text-align: center;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.thirdsection div h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0% 0% 6% 0%;
+}
+
+.thirdsection div button {
+  display: none;
+}
+
+.thirdsection .allfigures figure {
+  width: 90%;
+  margin: 4% auto;
+  position: relative;
+}
+
+.thirdsection .allfigures figure .figureimage {
+  width: 90%;
+}
+
+.thirdsection .allfigures figure .figureimage img {
+  width: 100%;
+}
+
+.thirdsection .allfigures figure figcaption {
+  position: absolute;
+  color: #ffffff;
+  left: 0;
+  bottom: 0;
+  font-size: 20px;
+  margin: 5%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 35%;
+}
+
+.thirdsection .allfigures figure:hover figcaption {
+  color: #000000;
+}
+
+.thirdsection .allfigures figure:hover img {
+  opacity: 0.4;
+}
+
+.thirdsection .secondbutton {
+  display: block;
+  margin: 5% auto 30% auto;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4% 14%;
+  border: 1px solid #000000;
+  background: #ffffff;
+}
+
+.thirdsection .secondbutton:hover {
+  background: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,27 @@
+
+.firstsection {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 15, 0.465), rgba(0, 0, 15, 0.465)), url(./images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    width: auto;
+    height: 80vh;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+
+    div {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        @include fontjosefin;
+        width: 95%;
+        font-size: 40px;
+        color: white;
+        text-transform: uppercase;
+        border: 2px solid $white;
+        padding: 4% 2%;
+        word-spacing: 9999px;
+    }
+}

@@ -1,0 +1,72 @@
+
+
+nav{
+    a:hover{
+        border-bottom: 2px solid $white;
+        padding-bottom: 1%;
+    }
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10% 1%;
+    z-index: 5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .normal {
+        width: 30%;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            @include fontalata;
+            text-decoration: none;
+            color: $white;
+
+            &:hover {
+                border-bottom: 2px solid $white;
+                padding-bottom: 1%;
+
+
+            }
+        }
+    }
+}
+
+.special {
+
+    @include fontjosefin;
+    display: none;
+    z-index: 2;
+    background: black;
+    width: 100%;
+    padding: 50% 0%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    a {
+        text-decoration: none;
+        color: $white;
+        margin: 3%;
+        font-size: 2rem;
+    }
+
+}
+
+.show {
+    display: flex;
+}
+

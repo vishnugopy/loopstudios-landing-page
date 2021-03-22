@@ -1,0 +1,52 @@
+
+footer {
+
+    .footercontainer {
+        background: $black;
+        padding: 20% 1%;
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    img {
+        order: 1;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .socials {
+        order: 3;
+        margin: 8% 0%;
+
+        img {
+            width: auto;
+            margin: 0% 3%;
+        }
+    }
+
+    nav {
+        order: 2;
+        margin: 10% auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        a {
+            @include fontalata;
+            text-decoration: none;
+            color: $white;
+            margin: 10% auto;
+        }
+    }
+
+    p {
+        order: 4;
+        @include fontalata;
+        color: $darkgray;
+    }
+
+
+}
